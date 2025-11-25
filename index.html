@@ -113,7 +113,6 @@ header.navbar nav ul li a:hover {color:#3498db;}
     <button type="submit">Send Message</button>
   </form>
 </section>
-
 <script>
 // Smooth scroll nav
 document.querySelectorAll('header nav a').forEach(link=>{
@@ -137,7 +136,7 @@ window.addEventListener('scroll',()=>{
 });
 
 // Load JSON data
-fetch('chavit.json')
+fetch('data.json')
   .then(res=>res.json())
   .then(data=>{
     loadSkills(data.skills);
@@ -151,7 +150,7 @@ function loadSkills(skills){
   skills.forEach(skill=>{
     const div=document.createElement('div');
     div.classList.add('skill');
-    div.innerHTML=`<label>${skill.name}</label><div class="progress-bar" style="--width:${skill.level}"></div>`;
+    div.innerHTML=`<label>${skill.name}</label><div class="progress-bar" style="width:${skill.level}"></div>`;
     container.appendChild(div);
   });
 }
@@ -169,7 +168,7 @@ function loadHobbies(hobbies){
 function loadProjects(projects){
   const container=document.getElementById('projects-container');
   projects.forEach(project=>{
-    const card=document.createElement('div');
+    const card=document.createElement('article');
     card.classList.add('project-card');
     card.innerHTML=`
       <img src="${project.image}" alt="${project.title}">
@@ -182,7 +181,7 @@ function loadProjects(projects){
 function loadEducation(education){
   const container=document.getElementById('education-container');
   education.forEach(edu=>{
-    const card=document.createElement('div');
+    const card=document.createElement('article');
     card.classList.add('edu-card');
     card.innerHTML=`<h3>${edu.level}</h3><p>${edu.details}</p>`;
     container.appendChild(card);
