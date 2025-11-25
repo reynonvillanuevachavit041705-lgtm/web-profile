@@ -1,0 +1,30 @@
+{
+  "skills": [
+    {"name": "Web Development", "level": "90%"},
+    {"name": "Data Analysis", "level": "80%"},
+    {"name": "Python Programming", "level": "85%"},
+    {"name": "Database Management", "level": "75%"}
+  ],
+  "hobbies": ["Gaming", "Traveling", "Reading Tech Blogs", "Photography"],
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "Created a modern responsive portfolio website using HTML, CSS, and JS.",
+      "image": "portfolio.png"
+    },
+    {
+      "title": "Sales Dashboard",
+      "description": "Developed a dashboard with charts and analytics using Python and Tableau.",
+      "image": "dashboard.png"
+    },
+    {
+      "title": "Chatbot AI",
+      "description": "Implemented an AI chatbot using Python and NLP techniques.",
+      "image": "chatbot.png"
+    }
+  ],
+  "education": [
+    {"level": "Bachelor of Science in Information Technology", "details": "XYZ University, 2020-2024"},
+    {"level": "Senior High School", "details": "ABC High School, 2018-2020"}
+  ]
+}
